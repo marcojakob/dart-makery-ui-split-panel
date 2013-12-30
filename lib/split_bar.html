@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<link rel="import" href="split_panel.html">
+<link rel="import" href="split_panel_child.html">
+
+<polymer-element name="split-bar-element" on-mousedown="{{startDragging}}">
+  <template>
+    <style>
+      @host {
+        :scope {
+          display: block;
+          box-sizing: border-box;
+          background-color: #b5b5b5; 
+        }
+      }
+      
+      .horizontal {
+        width: 5px; 
+        height: 100%; 
+        cursor: e-resize;
+        float: left;
+      }
+      
+      .vertical {
+        width: 100%;
+        height: 5px;
+        cursor: n-resize;
+      }
+    </style>
+    <content></content>
+  </template>
+  
+  <script type="application/dart" src="split_bar.dart"></script>
+</polymer-element>

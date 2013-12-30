@@ -1,0 +1,8 @@
+name: makery_ui_split_panel
+version: 0.0.1
+description: A SplitPanel element for Polymer.dart
+dependencies:
+  polymer: any
+transformers:
+- polymer:
+    entry_points: example/example.html

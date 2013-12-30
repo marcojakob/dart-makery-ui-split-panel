@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<polymer-element name="split-panel-child-element">
+  <template>
+    <style>
+      @host {
+        :scope {
+          display: block;
+          box-sizing: border-box;
+          overflow: auto;
+        }
+      }
+      
+      .horizontal {
+        height: 100%; 
+        float: left;
+      }
+      
+      .vertical {
+        width: 100%;
+      }
+    </style>
+    <content></content>
+  </template>
+  
+  <script type="application/dart" src="split_panel_child.dart"></script>
+</polymer-element>
